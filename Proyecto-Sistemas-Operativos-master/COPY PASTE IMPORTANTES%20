@@ -1,0 +1,29 @@
+/*****************************************
+        MENSAJE DE ERROR BASICO
+*****************************************/
+
+let mitad=`tput cols`/2
+else
+
+  tput cup 60 90
+  tput setab 1
+  tput setaf 7
+  tput cup 62 0
+
+
+
+  echo ""
+  echo ""
+  tput setaf 7
+  tput cup 32 `expr $mitad - 40`
+  echo "La persona ingresada no esta registrada: desea reintentar (s/n):"
+  tput cup 31 83
+  read cont
+  if [ $cont = "n" ]
+  then
+    tput sgr0
+    menu=false
+    clear
+  else
+    tput sgr0
+  fi
